@@ -1,7 +1,8 @@
 PATTERN /W ARC
 
-1: next step (pattern)
-2-3: do not patch
+1: NEXT STEP (PATTERN)
+2-3: DO NOT PATCH
+
 
 
 #1
@@ -15,11 +16,12 @@ X P.NEXT
 $ 3
 
 #3
-L 0 1: PN.END I ARC.VAL 1
-L 0 1: PN.START I ARC.VAL 2
+A ARC.VAL 0; B ARC.VAL 1
+C ARC.VAL 2; D + B 1
+L 0 1: PN.END I B; PN.L I D
+L 0 1: PN.START I C
 CV.SLEW 1 LSH ARC.VAL 3 3
-Z ARC.VAL 0
-CV 1 N - + PN.NEXT 0 Z 24
+CV 1 N - + PN.NEXT 0 A 24
 
 #4
 
@@ -42,10 +44,10 @@ ARC.SVAL 0 24; ARC.SVAL 1 4
 M.ACT 0
 
 #P
-28	28	0	0
+5	5	0	0
 1	1	1	1
 0	0	0	0
-28	28	63	63
+4	4	63	63
 
 3	1	0	0
 5	1	0	0
