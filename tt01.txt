@@ -1,9 +1,11 @@
 PATTERN /W ARC
 
 1: NEXT STEP (PATTERN)
-2-3: DO NOT PATCH
-
-
+Ring 1 add/sub pitch (out = CV 1)
+Ring 2 pattern start
+Ring 3 pattern end 
+Ring 4 slew of CV1
+Pattern: Row 1(notes) Row 2 Steps
 
 #1
 TR.P 0
