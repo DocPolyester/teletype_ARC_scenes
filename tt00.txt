@@ -1,7 +1,6 @@
 EUCLIDEAN RINGS /W ARC
-
-rings 1 - 4 adjust euclidean fill, length , phase offset 
-
+rings 1 - 4 adjust euclidean fill [length , phase offset]
+outputs: TR 1-4 
 1: next step
 2: reset/sync of all rings to 0
 3: on/off length config mode
