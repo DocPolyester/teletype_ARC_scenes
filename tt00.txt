@@ -1,61 +1,67 @@
 EUCLIDEAN RINGS /W ARC
 rings 1 - 4 adjust euclidean fill [length , phase offset]
 outputs: TR 1-4 
-1: next step
-2: reset/sync of all rings to 0
-3: on/off length config mode
-3: on/off phase offset config mode
+CV1: a CV combined of pattern 1 and 2
+5: next step
+6: reset/sync of all rings to 0
+7: on/off length config mode
+8: on/off phase offset config mode
 
 #1
-ARC.STP
+CV 1 N - PN.NEXT 0 PN.HERE 1
 
 #2
-ARC.RST
+CV 2 N PN.NEXT 1
 
 #3
+CV 3 N PN.NEXT 2
+
+#4
+CV 4 N PN.NEXT 3
+
+#5
+ARC.STP
+
+#6
+ARC.RST
+
+#7
 EVERY 2: ARC.MO 4
 OTHER: ARC.MO 0
 
-#4
+#8
 EVERY 2: ARC.MO 5
 OTHER: ARC.MO 0
-
-#5
-
-#6
-
-#7
-
-#8
 
 #M
 
 #I
 ARC.MO 0
 ARC.SYN 1
+L 0 3: ARC.SCR.N I + I 1
 
 #P
-0	0	0	0
+16	16	16	16
 1	1	1	1
 0	0	0	0
-63	63	63	63
+16	16	16	16
 
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
-0	0	0	0
+2	2	2	2
+4	4	4	4
+6	6	6	6
+8	8	8	8
+10	10	10	10
+12	12	12	12
+14	14	14	14
+16	16	16	16
+18	18	18	18
+20	20	20	20
+22	22	22	22
+24	24	24	24
+26	26	26	26
+28	28	28	28
+30	30	30	30
+32	32	32	32
 0	0	0	0
 0	0	0	0
 0	0	0	0
