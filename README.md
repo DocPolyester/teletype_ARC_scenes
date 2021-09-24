@@ -39,6 +39,10 @@ ARC.SYN x<br>
 <br>
 1 on - all rings are synced [default] ; in EUCL Mode to the slowest (longest) ring<br>
 0 off<br>
+ARC.STP x<br>
+<br>
+x - Next Euclidiean Step of ARC c, 0 for all<br>
+<br>
 ARC.LEN x y<br>
 <br>
 x - Ring (1-4) , 0 for all<br>
