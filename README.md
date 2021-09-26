@@ -22,36 +22,38 @@ Mode 3(min Val display mode 0-64) - e.g. for Start of pattern or others<br>
 Mode 4(Euclidean Length configuration)<br>
 Mode 5(Euclidean Phase configuration)<br>
 OPs:<br>
-ARC.MO x y<br>
 <br>
+ARC.MO x y<br>
 This will change function or display of the rings.<br>
 x - Ring (1-4), 0 for all<br>
 y - set mode (0 Euclidean,1 Pitch, 2 Max Val, 3 Min Val, 4 config length, 5 config phase)<br>
-ARC.VAL x - set/get current value of ring x<br>
 <br>
+ARC.VAL x - set/get current value of ring x<br>
 x - Ring (1-4), 0 for all<br>
 y - Ring value (0-64)<br>
 following OPs are especially for Mode 0 (Euclidean Mode)<br>
+<br>
+ARC.EUC x - get current euclidean value of ring x<br>
+x - Ring (1-4)<br>
+<br>
 ARC.RST<br>
-<br>
 reset/sync of all ring steps to 0<br>
-ARC.SYN x<br>
 <br>
+ARC.SYN x<br>
 1 on - all rings are synced [default] ; in EUCL Mode to the slowest (longest) ring<br>
 0 off<br>
-ARC.STP x<br>
 <br>
+ARC.STP x<br>
 x - Next Euclidiean Step of ARC c, 0 for all<br>
 <br>
 ARC.LEN x y<br>
-<br>
 x - Ring (1-4) , 0 for all<br>
 y - length of pattern [default 16]<br>
-ARC.PHA x y<br>
 <br>
+ARC.PHA x y<br>
 x - Ring (1-4), 0 for all<br>
 y - step / phase offset<br>
-ARC.SCR x y - start a script at Euclidean trigger, only in Mode (0)<br>
 <br>
+ARC.SCR x y - start a script at Euclidean trigger, only in Mode (0)<br>
 x - Ring (1-4), 0 for all<br>
 y - Script (1-8)<br>
